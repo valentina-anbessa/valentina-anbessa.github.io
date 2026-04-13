@@ -1,0 +1,3584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Youtube Updates</title>
+    <link href="main.out.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
+        html * {
+            /* font-family: verdana; */
+            font-family: "Noto Sans TC", serif;
+            font-optical-sizing: auto;
+            /* font-weight: normal; */
+            font-style: normal;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            /* max-width: 1000px; */
+            padding: 20px;
+            text-align: center;
+            background-color: #28C8C8;
+            min-width: 100vw;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card a {
+            display: grid;
+            grid-auto-flow: row;
+            /* grid-template-columns: 100px; */
+            /* grid-template-rows: repeat(2, 1fr); */
+            /* display: flex; */
+            /* justify-content: space-between; */
+            text-align: center;
+            color: #000;
+            font-size: 18px;
+            text-decoration: none;
+            /* margin-top: 10px; */
+            font-weight: bold;
+        }
+
+        .card a:hover {
+            color: #ff69ad;
+        }
+
+        .card a img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 42%;
+            /* max-width: 80px;
+            margin-bottom: 15px; */
+        }
+
+        .title {
+            font-size: 32px;
+            color: #ffffff;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        th span {
+            display: block;
+        }
+
+        #topBtn {
+            display: none;
+            position: fixed;
+            bottom: 50px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: #28c3c8;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+        }
+
+        #topBtn:hover {
+            background-color: #555;
+        }
+
+        .border-b {
+            border-bottom-width: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+
+    
+    <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+        <caption class="p-5 text-lg font-semibold text-left rtl:text-right text-gray-900 bg-white">
+            <div class="mt-1 flex justify-end text-right text-sm font-normal text-gray-800">更新時間: 2026-04-13 19:26:21 (本站訪客數 <a href="https://www.stylemap.co.jp/"><img src="https://www.f-counter.net/j/65/1752629825/" alt="アクセスカウンター"></a> 人次)</div>
+            <p class="mt-1 text-center text-big bg-green-200 font-normal text-gray-800 ">集合小草們的頻道，促進頻道間的活絡與發展，以提升訂閱數、觀看數
+                (<a class="text-blue-700 hover:underline" href="mailto:dignasoto780@gmail.com">聯絡我們</a>)<br><span
+                    class="bg-green-500">推荐網站</span>: <a class="text-blue-700 hover:underline"
+                    href="https://flash.justice-tw.org/grassway" target="_blank">民眾之窗-每日輿情</a></p>
+        </caption>
+        <div class="container">
+            <div class="title">小草頻道台</div>
+            
+            <div class="card">
+                <a href="#小草新星秀">
+                    <div><img src="./static/小草新星秀.png"></div>
+                    <div>小草新星秀</div>
+                </a>
+            </div>
+            
+            <div class="card">
+                <a href="#音樂娛樂台">
+                    <div><img src="./static/音樂娛樂台.png"></div>
+                    <div>音樂娛樂台</div>
+                </a>
+            </div>
+            
+            <div class="card">
+                <a href="#政治評論台">
+                    <div><img src="./static/政治評論台.png"></div>
+                    <div>政治評論台</div>
+                </a>
+            </div>
+            
+            <div class="card">
+                <a href="#KOL直播">
+                    <div><img src="./static/KOL直播.png"></div>
+                    <div>KOL直播</div>
+                </a>
+            </div>
+            
+            <div class="card">
+                <a href="#民眾黨公職">
+                    <div><img src="./static/民眾黨公職.png"></div>
+                    <div>民眾黨公職</div>
+                </a>
+            </div>
+            
+        </div>
+        
+        <table id="小草新星秀" class="w-full text-left rtl:text-right">
+            <thead class="text-base text-center text-gray-800 uppercase bg-yellow-200">
+                <tr>
+                    <th scope="col" class="px-4 py-3 font-medium">
+                        頻道名稱
+                    </th>
+                    <th scope="col" class="px-4 py-3 text-sm font-medium">
+                        類別
+                    </th>
+                    <th scope="col" class="px-4 py-3 font-medium">
+                        影片名稱<span>→</span>
+                    </th>
+                    <th scope="col" class="px-4 py-3 text-sm font-medium">
+                        訂閱數<span>→</span>
+                    </th>
+                    <th scope="col" class="px-4 py-3 text-sm font-medium">
+                        觀看數<span>→</span>
+                    </th>
+                    <th scope="col" class="px-4 py-3 text-sm font-medium">
+                        按讚數<span>→</span>
+                    </th>
+                    <th scope="col" class="px-4 py-3 font-medium">
+                        發佈時間
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/4sSenpGEQjJSW3CJRZqAK3gclMB-uY42Qf5PS76IIVFOZqihITAfoFPb5n804CHnPAsi7D5Jyw=s88-c-k-c0x00ffffff-no-rj"> Mx. Shoe
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        小草新星秀
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=AOMKzwI3nV4" class="text-blue-700 hover:underline">Mx.Shoe - 嘉義捷報 | 台派玻璃心碎 | 小寶律師</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        4540
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        1573
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        201
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-09 18:22:24
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/4sSenpGEQjJSW3CJRZqAK3gclMB-uY42Qf5PS76IIVFOZqihITAfoFPb5n804CHnPAsi7D5Jyw=s88-c-k-c0x00ffffff-no-rj"> Mx. Shoe
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        小草新星秀
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=z4pdRhiKJhM" class="text-blue-700 hover:underline">嘉義的朋友，請聽阿北的話！4/4 (六) 請排除萬難顧電話 ...</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        4540
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        1014
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        39
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-04 10:40:51
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/glfAXZylRXesuBEXcmNuzFIgD_rzgoSbdcv0xTpaITrnQK2f3HhYpFHxNX8-oH6N8db9mJ2feA=s88-c-k-c0x00ffffff-no-rj"> 《Q時台灣》
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        小草新星秀
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=WXidS_L5-kw" class="text-blue-700 hover:underline">【賴清德自打臉】印度移工引進背後的權力騙局！台灣女性集體憤怒...</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        52900
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        690
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        156
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-13 18:00:50
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/glfAXZylRXesuBEXcmNuzFIgD_rzgoSbdcv0xTpaITrnQK2f3HhYpFHxNX8-oH6N8db9mJ2feA=s88-c-k-c0x00ffffff-no-rj"> 《Q時台灣》
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        小草新星秀
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=QcH_JdM5iPc" class="text-blue-700 hover:underline">【兩岸和平】鄭麗文拋「3努力、5主張」！時隔十年兩黨對話，核...</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        52900
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        860
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        72
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-13 18:00:45
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/nPiS66LsPa_WVaU7247XKgl5cgI43U25LuAEVsj18ZIMVELgMNd0Y3BvOsSK6aSyhG3whLVOiw=s88-c-k-c0x00ffffff-no-rj"> lu編噹時事
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        小草新星秀
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=qvwn_aD3ZxE" class="text-blue-700 hover:underline">又要怪藍白?  明明簽約的是你!</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        69400
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        5493
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        972
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-13 17:27:02
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/nPiS66LsPa_WVaU7247XKgl5cgI43U25LuAEVsj18ZIMVELgMNd0Y3BvOsSK6aSyhG3whLVOiw=s88-c-k-c0x00ffffff-no-rj"> lu編噹時事
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        小草新星秀
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=a0oudUsnvRE" class="text-blue-700 hover:underline">壁如接位??海線志工不忍全說了!</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        69400
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        1150
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        169
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-13 13:56:25
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/biyRM7Dx8E4BXoCQFAM1JpEJkjAIu5XLT9LPbwdoHOVmgTPOyMtiM3CJOoopO3w0c2lSt-dcrQ=s88-c-k-c0x00ffffff-no-rj"> 路見不平小市民
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        小草新星秀
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=-QPSjovuiws" class="text-blue-700 hover:underline">專科護理師三大困境，守護第一線勞權❗ #民眾黨 #立法院 #...</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        25000
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        356
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        19
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-13 18:30:00
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/a0dyT7OrvJt60rVwlQlVVeG3Jyf-jY8tloN8aYRfCJHH3epgue-vyzgf_YI3rxvHuRTwHFMlvw=s88-c-k-c0x00ffffff-no-rj"> 小草-艾草
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        小草新星秀
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=qCiT_0Cm13w" class="text-blue-700 hover:underline">民眾精闢的道出台灣司法被詬病原因，以及那麼多恐龍法官？</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        45600
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        126
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        72
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-13 17:31:12
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/biyRM7Dx8E4BXoCQFAM1JpEJkjAIu5XLT9LPbwdoHOVmgTPOyMtiM3CJOoopO3w0c2lSt-dcrQ=s88-c-k-c0x00ffffff-no-rj"> 路見不平小市民
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        小草新星秀
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=QLQBnL6SJUY" class="text-blue-700 hover:underline">[轉播院會] 2026.04.14 院會-剩下的討論事項｜遞...</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        25000
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        0
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        6
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-13 17:06:18
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/glfAXZylRXesuBEXcmNuzFIgD_rzgoSbdcv0xTpaITrnQK2f3HhYpFHxNX8-oH6N8db9mJ2feA=s88-c-k-c0x00ffffff-no-rj"> 《Q時台灣》
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        小草新星秀
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=lATCVfIsyq8" class="text-blue-700 hover:underline">【暖心瞬間】雲端相逢！鄭麗文訪陸偶遇台籍乘務員：願兩岸和平，...</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        52900
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        1999
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        230
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-13 15:00:39
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/biyRM7Dx8E4BXoCQFAM1JpEJkjAIu5XLT9LPbwdoHOVmgTPOyMtiM3CJOoopO3w0c2lSt-dcrQ=s88-c-k-c0x00ffffff-no-rj"> 路見不平小市民
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        小草新星秀
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=mxCbfdf0AGE" class="text-blue-700 hover:underline">[轉播委員會] 2026.04.13 早上突然有空啦❗突襲開...</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        25000
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        632
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        81
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-13 12:39:39
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/emraYocikDsk4-xGx8q1rhd-nCp9jkRdYAatX_cHvog4PWn61o54b6u5LH9gHgadVbCEDucrcvE=s88-c-k-c0x00ffffff-no-rj"> Yu 阿嬤支持柯文哲
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        小草新星秀
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=PcObMUnkiOQ" class="text-blue-700 hover:underline">黃國昌⁚敢生敢養⌈雙語教育⌋讓福利升級⌈一天當三天用⌋#新北...</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        13300
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        18
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        11
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-13 09:09:36
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/nmHlSMQv3n-JHydLQAYCb_rl3v6Iby2jiCBXYRVYhkcX59AuQqcksfzXgF_6jo6gl7JStCVJv6g=s88-c-k-c0x00ffffff-no-rj"> 貓草
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        小草新星秀
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=5banLxZThDY" class="text-blue-700 hover:underline">等我端出政見我會讓板橋的市民朋友認同支持林子宇是最好的選擇</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        14700
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2320
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        382
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-13 05:37:38
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/emraYocikDsk4-xGx8q1rhd-nCp9jkRdYAatX_cHvog4PWn61o54b6u5LH9gHgadVbCEDucrcvE=s88-c-k-c0x00ffffff-no-rj"> Yu 阿嬤支持柯文哲
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        小草新星秀
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=poTV7cFTMIs" class="text-blue-700 hover:underline">柯文哲說台灣什麼都缺唯一不⌈缺德⌋#柯文哲</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        13300
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        29
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        15
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-13 04:02:50
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/UzNxM6X_uTtzh3M6gRb5AULF7enYTHsefWHMxkv0_SSWQ3nJE45N-I9C1s5Pi8kMf2wufx2AOA=s88-c-k-c0x00ffffff-no-rj"> If flowers bloom, butterflies will come
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        小草新星秀
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=XfWnVY7Pu68" class="text-blue-700 hover:underline">起訴書 vs 判決書：證據不足仍判有罪？一審判決與二審攻防解...</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        16800
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        390
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        90
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-13 04:00:23
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/emraYocikDsk4-xGx8q1rhd-nCp9jkRdYAatX_cHvog4PWn61o54b6u5LH9gHgadVbCEDucrcvE=s88-c-k-c0x00ffffff-no-rj"> Yu 阿嬤支持柯文哲
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        小草新星秀
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=zRAviLXWPUQ" class="text-blue-700 hover:underline">館長說沒有退路了#館長</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        13300
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        162
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        32
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-13 02:46:11
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/nPiS66LsPa_WVaU7247XKgl5cgI43U25LuAEVsj18ZIMVELgMNd0Y3BvOsSK6aSyhG3whLVOiw=s88-c-k-c0x00ffffff-no-rj"> lu編噹時事
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        小草新星秀
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=56vo8peafnI" class="text-blue-700 hover:underline">直播精華!這是愛台灣? 愛河變新恆河?</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        69400
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        19927
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        1209
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-12 20:55:12
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/Ic8QwUkf_4c4y5Pn62eum0QJYklsj_LGOmMFnlR23IzY-WVBTVAeOKlVj5bvNLW97fLFyNEr=s88-c-k-c0x00ffffff-no-rj"> 台灣喵眾黨
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        小草新星秀
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=5TJitcANcbg" class="text-blue-700 hover:underline">2026/04/12白沙屯媽祖活動</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        9530
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        21292
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        62
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-12 20:35:31
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/8bCe-8Vr5Ynxk3cOHAWjK1r4bYNMxb6RG0lczPanetXGQJSJvnOQlwS8eGqlTYNUWG_NBHqR5g=s88-c-k-c0x00ffffff-no-rj"> シズカ🌱希姿卡
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        小草新星秀
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=ugudPohGwP8" class="text-blue-700 hover:underline">4/11 陳怡君「謝謝支持者們的發聲，你們就是我的動力、底氣...</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        6460
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        162
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        53
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-12 16:43:28
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/8bCe-8Vr5Ynxk3cOHAWjK1r4bYNMxb6RG0lczPanetXGQJSJvnOQlwS8eGqlTYNUWG_NBHqR5g=s88-c-k-c0x00ffffff-no-rj"> シズカ🌱希姿卡
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        小草新星秀
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=4GNIUTcQw1E" class="text-blue-700 hover:underline">4/11 陳世軒「投票率對地方選舉是關鍵」</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        6460
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        406
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        97
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-12 12:06:14
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/FCxzSxEF2qr29K1RvWFaVbgO14nZpssRzNVllg0LQP8cj5nQxknWpX4FLZe68mA_YhUdmfRrXQ=s88-c-k-c0x00ffffff-no-rj"> 蒲獅正義
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        小草新星秀
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=arAPOYgKcSE" class="text-blue-700 hover:underline">讓新北更有型/新北市長參選人黃國昌/台灣民眾黨</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        15200
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        11041
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        124
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-12 05:58:34
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/nmHlSMQv3n-JHydLQAYCb_rl3v6Iby2jiCBXYRVYhkcX59AuQqcksfzXgF_6jo6gl7JStCVJv6g=s88-c-k-c0x00ffffff-no-rj"> 貓草
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        小草新星秀
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=4-TZ_mlBUUE" class="text-blue-700 hover:underline">#新北必勝票投國昌 #板橋要贏票投子宇</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        14700
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        5000
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        215
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-12 03:56:27
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/8bCe-8Vr5Ynxk3cOHAWjK1r4bYNMxb6RG0lczPanetXGQJSJvnOQlwS8eGqlTYNUWG_NBHqR5g=s88-c-k-c0x00ffffff-no-rj"> シズカ🌱希姿卡
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        小草新星秀
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=hA_a0QiRYQE" class="text-blue-700 hover:underline">跟在國昌主席身邊壓力會不會很大？大鍋：會！ #黃國昌 #民眾...</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        6460
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        5040
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        399
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-12 01:23:54
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/eEtwzE9CajyD4OHoooGclMHVOfWt8AopDJ0sn38_akGT8I8wIdawZAawSVff0Zr51KpVPTN5bQc=s88-c-k-c0x00ffffff-no-rj"> 挺阿北
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        小草新星秀
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=LV-iaXlxL3U" class="text-blue-700 hover:underline">2026-04-11 讓新北更有型   3M 高角度 4K ...</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        9590
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        534
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        155
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-11 22:52:25
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/nmHlSMQv3n-JHydLQAYCb_rl3v6Iby2jiCBXYRVYhkcX59AuQqcksfzXgF_6jo6gl7JStCVJv6g=s88-c-k-c0x00ffffff-no-rj"> 貓草
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        小草新星秀
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=WtopR73rVkE" class="text-blue-700 hover:underline">貓草直播｜20260411 暢唱咖啡 Live concer...</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        14700
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        3242
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        366
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-11 21:35:17
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/eEtwzE9CajyD4OHoooGclMHVOfWt8AopDJ0sn38_akGT8I8wIdawZAawSVff0Zr51KpVPTN5bQc=s88-c-k-c0x00ffffff-no-rj"> 挺阿北
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        小草新星秀
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=3-HB-0ax9Uc" class="text-blue-700 hover:underline">2026-04-11 👊為你做到最好 讓新北更有型👊  #台...</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        9590
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        6391
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        648
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-11 17:54:55
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/a0dyT7OrvJt60rVwlQlVVeG3Jyf-jY8tloN8aYRfCJHH3epgue-vyzgf_YI3rxvHuRTwHFMlvw=s88-c-k-c0x00ffffff-no-rj"> 小草-艾草
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        小草新星秀
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=MGbCAf2HrLw" class="text-blue-700 hover:underline">4/11 讓新北更有型，新北的選擇黃國昌</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        45600
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        10726
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        1094
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-11 17:39:32
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/Ic8QwUkf_4c4y5Pn62eum0QJYklsj_LGOmMFnlR23IzY-WVBTVAeOKlVj5bvNLW97fLFyNEr=s88-c-k-c0x00ffffff-no-rj"> 台灣喵眾黨
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        小草新星秀
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=HgKD5bK48Os" class="text-blue-700 hover:underline">2026/04/11 新北的選擇黃國昌 #黃國昌 #柯文哲 ...</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        9530
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        4133
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        47
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-11 16:49:01
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/027vP7OMDiVUuJ8hTXM4RPel-TbE4mX17VwM9TIMvsajaQyWmoaU9fhK_pMy0sVYJBg0J1NE=s88-c-k-c0x00ffffff-no-rj"> 棄藍綠保台灣我投柯
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        小草新星秀
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=KXhxHZuhd1g" class="text-blue-700 hover:underline">張啓楷爆料民進黨打算用檢調抓人｜高金素梅被監聽十年 （國安組...</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        68800
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        257991
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        8356
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-09 20:34:11
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/a0dyT7OrvJt60rVwlQlVVeG3Jyf-jY8tloN8aYRfCJHH3epgue-vyzgf_YI3rxvHuRTwHFMlvw=s88-c-k-c0x00ffffff-no-rj"> 小草-艾草
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        小草新星秀
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=Jle_1go5tBk" class="text-blue-700 hover:underline">投過民進黨的他現在非常後悔</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        45600
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        8979
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        1195
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-09 18:00:06
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/027vP7OMDiVUuJ8hTXM4RPel-TbE4mX17VwM9TIMvsajaQyWmoaU9fhK_pMy0sVYJBg0J1NE=s88-c-k-c0x00ffffff-no-rj"> 棄藍綠保台灣我投柯
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        小草新星秀
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=yFoYXjfPJgc" class="text-blue-700 hover:underline">柯批王美惠不敢上台發言 #民眾黨  #柯文哲 #張啓楷 20...</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        68800
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        8068
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        244
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-08 10:20:15
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/027vP7OMDiVUuJ8hTXM4RPel-TbE4mX17VwM9TIMvsajaQyWmoaU9fhK_pMy0sVYJBg0J1NE=s88-c-k-c0x00ffffff-no-rj"> 棄藍綠保台灣我投柯
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        小草新星秀
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=JbK6qtJ7WWk" class="text-blue-700 hover:underline">花蓮震災特別條例300億花去哪 民眾黨要下鄉勘查 #黃國昌#...</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        68800
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        6884
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        664
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-07 15:48:56
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/Ic8QwUkf_4c4y5Pn62eum0QJYklsj_LGOmMFnlR23IzY-WVBTVAeOKlVj5bvNLW97fLFyNEr=s88-c-k-c0x00ffffff-no-rj"> 台灣喵眾黨
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        小草新星秀
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=-ZkiUAK4ZO4" class="text-blue-700 hover:underline">2026/04/06南港展覽館寵物用品展喵主播逛展 #cat...</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        9530
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        4788
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        55
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-07 04:38:14
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/371sEPHuF3xMCPhh9UBgGawQs0GWi6X389OwUSf_ZTr6JGZb3xRE2MHw0dy00i8SCl74oMvW_g=s88-c-k-c0x00ffffff-no-rj"> 凹凸不平胖市民
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        小草新星秀
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=Jl2j0plmMmw" class="text-blue-700 hover:underline">《奮戰到底》 #司法改革 #法庭直播 #戰到底 #民眾黨 #...</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        5080
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        477
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        98
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-06 09:00:06
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/FCxzSxEF2qr29K1RvWFaVbgO14nZpssRzNVllg0LQP8cj5nQxknWpX4FLZe68mA_YhUdmfRrXQ=s88-c-k-c0x00ffffff-no-rj"> 蒲獅正義
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        小草新星秀
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=dyDlq-odU_8" class="text-blue-700 hover:underline">台灣民眾黨-高雄市黨部/兒童節親子手作</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        15200
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        10425
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        79
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-04 16:56:18
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/eEtwzE9CajyD4OHoooGclMHVOfWt8AopDJ0sn38_akGT8I8wIdawZAawSVff0Zr51KpVPTN5bQc=s88-c-k-c0x00ffffff-no-rj"> 挺阿北
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        小草新星秀
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=nP6mkvoeARM" class="text-blue-700 hover:underline">說明【最後機會❗️】嘉義的未來，只差你接起這通電話！</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        9590
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        1426
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        181
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-04 11:20:22
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/CmDhR2Wxs0uarHHOgrloQTckniU7eVj5ngcI4fA1tpTh-mllixX08MDoV9JEq6HyByudUnBygg=s88-c-k-c0x00ffffff-no-rj"> 狐尾草
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        小草新星秀
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=TzteW6DwKU0" class="text-blue-700 hover:underline">115.02.18｜大灣廣護宮-謝龍介x韓國瑜發春聯迎新春</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        6560
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        0
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        0
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-02 22:00:46
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/4sSenpGEQjJSW3CJRZqAK3gclMB-uY42Qf5PS76IIVFOZqihITAfoFPb5n804CHnPAsi7D5Jyw=s88-c-k-c0x00ffffff-no-rj"> Mx. Shoe
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        小草新星秀
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=0uad-4mdXfc" class="text-blue-700 hover:underline">彭振聲家破人亡，今天的羈押如同刑求  柯文哲案 法庭實錄</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        4540
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2521
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        275
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-03-31 19:15:00
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/371sEPHuF3xMCPhh9UBgGawQs0GWi6X389OwUSf_ZTr6JGZb3xRE2MHw0dy00i8SCl74oMvW_g=s88-c-k-c0x00ffffff-no-rj"> 凹凸不平胖市民
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        小草新星秀
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=uILLSMK0A5s" class="text-blue-700 hover:underline">怒胖｜2026.3.29｜上凱道 討公道 戰！為司法正義而戰...</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        5080
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        10065
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        130
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-03-30 05:56:14
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/FCxzSxEF2qr29K1RvWFaVbgO14nZpssRzNVllg0LQP8cj5nQxknWpX4FLZe68mA_YhUdmfRrXQ=s88-c-k-c0x00ffffff-no-rj"> 蒲獅正義
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        小草新星秀
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=TTvuAAiyGY0" class="text-blue-700 hover:underline">戰！3/29 凱達格蘭大道/搶救淪陷司法</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        15200
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        38470
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        165
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-03-29 16:11:23
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/CmDhR2Wxs0uarHHOgrloQTckniU7eVj5ngcI4fA1tpTh-mllixX08MDoV9JEq6HyByudUnBygg=s88-c-k-c0x00ffffff-no-rj"> 狐尾草
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        小草新星秀
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=z1Ht2t9xnM0" class="text-blue-700 hover:underline">115.03.29｜上凱道．討公道，一起戰出來</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        6560
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2313
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        501
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-03-29 15:26:57
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/7ZqzFi0SiirYcpipuYzMMIiNiQ5fAQUOT-Yxi5mQ9NJlbY2m-JmURVFqsKdJHzu4O9gHLU6a_Q=s88-c-k-c0x00ffffff-no-rj"> 南部眾
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        小草新星秀
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=R8avR-P5bnU" class="text-blue-700 hover:underline">【直播】柯文哲前主席判決，台南聲援現場</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        3980
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        4560
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        123
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-03-27 03:27:05
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/CmDhR2Wxs0uarHHOgrloQTckniU7eVj5ngcI4fA1tpTh-mllixX08MDoV9JEq6HyByudUnBygg=s88-c-k-c0x00ffffff-no-rj"> 狐尾草
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        小草新星秀
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=GVGOvASJ4Lk" class="text-blue-700 hover:underline">115.03.26｜柯文哲一審宣判⚖️【現場直播】小草集結挺...</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        6560
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2794
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        556
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-03-26 15:23:51
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/tnM1hcxz5HIX-gOdYVOZqEpiN2LArxkk9w3j9VVEQ1tnoyxMEj4N9Z5FPL98O4xldOIxIr7A=s88-c-k-c0x00ffffff-no-rj"> Caltrop Squadron
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        小草新星秀
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=oWc2bm2ad1g" class="text-blue-700 hover:underline">【和平時講】第二講主題：兩岸未終局，如何確保和平？-曾經，我...</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        12500
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        896
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        62
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-03-15 05:19:29
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/UzNxM6X_uTtzh3M6gRb5AULF7enYTHsefWHMxkv0_SSWQ3nJE45N-I9C1s5Pi8kMf2wufx2AOA=s88-c-k-c0x00ffffff-no-rj"> If flowers bloom, butterflies will come
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        小草新星秀
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=s6M-wLMdoIM" class="text-blue-700 hover:underline">「和平時講」和平時不講，難道打仗了再來講嗎？兩岸未終局，如何...</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        16800
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        1296
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        213
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-03-14 17:21:53
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/tnM1hcxz5HIX-gOdYVOZqEpiN2LArxkk9w3j9VVEQ1tnoyxMEj4N9Z5FPL98O4xldOIxIr7A=s88-c-k-c0x00ffffff-no-rj"> Caltrop Squadron
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        小草新星秀
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=FRFI9edTC94" class="text-blue-700 hover:underline">澈也未眠｜別讓別人的拳頭，決定了你腦袋裡的價值順序。</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        12500
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        161
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        27
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-03-08 18:51:52
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/AskVGG5ir-wQFXPngNnT2Dh26Vbo6fcKk2sZXdQjhRKa780fwUe30Z5EaPvCNca4WidQNFadIw=s88-c-k-c0x00ffffff-no-rj"> 小草-鹿角蕨
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        小草新星秀
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=Y9WwJd_7r5k" class="text-blue-700 hover:underline">天堂經典 收穫女神 法師紀錄</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        138
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        72
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-03-08 04:17:57
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/AskVGG5ir-wQFXPngNnT2Dh26Vbo6fcKk2sZXdQjhRKa780fwUe30Z5EaPvCNca4WidQNFadIw=s88-c-k-c0x00ffffff-no-rj"> 小草-鹿角蕨
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        小草新星秀
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=JNY8V9lZ96o" class="text-blue-700 hover:underline">天堂經典 收穫女神 法師練功紀錄</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        138
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        0
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        0
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-03-07 14:21:38
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/tnM1hcxz5HIX-gOdYVOZqEpiN2LArxkk9w3j9VVEQ1tnoyxMEj4N9Z5FPL98O4xldOIxIr7A=s88-c-k-c0x00ffffff-no-rj"> Caltrop Squadron
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        小草新星秀
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=i3KvZsUn3lQ" class="text-blue-700 hover:underline">澈也未眠｜甚麼原因造成的政治脫口秀化？現在人的評斷標準偏差</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        12500
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        116
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        22
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-03-06 18:26:46
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/UzNxM6X_uTtzh3M6gRb5AULF7enYTHsefWHMxkv0_SSWQ3nJE45N-I9C1s5Pi8kMf2wufx2AOA=s88-c-k-c0x00ffffff-no-rj"> If flowers bloom, butterflies will come
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        小草新星秀
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=5CDmQNCx2rg" class="text-blue-700 hover:underline">2026台灣民眾黨一日北高 380高雄市興達港情人碼頭👉高雄...</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        16800
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        8446
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        888
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-03-01 04:07:04
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/90JFU0weO1KlJuztzru9_eFZcF4Zfz5oWLgsSRz_KMhqR8L6wiK5omdz2X6bx5qcgtkPKctkUw=s88-c-k-c0x00ffffff-no-rj"> 草傳媒
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        小草新星秀
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=HwTVXiqwCxc" class="text-blue-700 hover:underline">【草媒聊天室】直播｜賴清德沒出ㄒㄧˊ行政亂象懶人包剖析</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        13900
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        821
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        216
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-01-23 02:38:34
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/AskVGG5ir-wQFXPngNnT2Dh26Vbo6fcKk2sZXdQjhRKa780fwUe30Z5EaPvCNca4WidQNFadIw=s88-c-k-c0x00ffffff-no-rj"> 小草-鹿角蕨
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        小草新星秀
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=miFluF_US5s" class="text-blue-700 hover:underline">戀愛少女，遇到阿北開心跳起來。@Team__KP @TPP_...</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        138
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        8
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        0
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-01-19 03:07:39
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/90JFU0weO1KlJuztzru9_eFZcF4Zfz5oWLgsSRz_KMhqR8L6wiK5omdz2X6bx5qcgtkPKctkUw=s88-c-k-c0x00ffffff-no-rj"> 草傳媒
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        小草新星秀
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=0SFBBoSNcMM" class="text-blue-700 hover:underline">【草媒聊天室】直播｜人工生殖法在吵什麼？國軍好慘 防寒衣都沒...</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        13900
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        748
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        168
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-01-09 14:32:33
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/90JFU0weO1KlJuztzru9_eFZcF4Zfz5oWLgsSRz_KMhqR8L6wiK5omdz2X6bx5qcgtkPKctkUw=s88-c-k-c0x00ffffff-no-rj"> 草傳媒
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        小草新星秀
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=73eoPf_0BdM" class="text-blue-700 hover:underline">【草媒聊天室】直播｜中共圍台軍演實彈射擊 賴清德只剩嘴巴強硬...</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        13900
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        358
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        104
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-01-01 02:41:11
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/7ZqzFi0SiirYcpipuYzMMIiNiQ5fAQUOT-Yxi5mQ9NJlbY2m-JmURVFqsKdJHzu4O9gHLU6a_Q=s88-c-k-c0x00ffffff-no-rj"> 南部眾
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        小草新星秀
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=_DvYDcrLMK8" class="text-blue-700 hover:underline">聊聊台南烏山頭水庫的光電水 #江明宗 ＃陳詩薇</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        3980
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        248
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        75
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2025-10-31 09:08:11
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/7ZqzFi0SiirYcpipuYzMMIiNiQ5fAQUOT-Yxi5mQ9NJlbY2m-JmURVFqsKdJHzu4O9gHLU6a_Q=s88-c-k-c0x00ffffff-no-rj"> 南部眾
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        小草新星秀
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=jNKg3giD_dc" class="text-blue-700 hover:underline">一日里長體驗活動精華紀錄</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        3980
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        143
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        67
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2025-09-14 22:50:34
+                    </td>
+                </tr>
+                
+            </tbody>
+        </table>
+        
+        <table id="音樂娛樂台" class="w-full text-left rtl:text-right">
+            <thead class="text-base text-center text-gray-800 uppercase bg-yellow-200">
+                <tr>
+                    <th scope="col" class="px-4 py-3 font-medium">
+                        頻道名稱
+                    </th>
+                    <th scope="col" class="px-4 py-3 text-sm font-medium">
+                        類別
+                    </th>
+                    <th scope="col" class="px-4 py-3 font-medium">
+                        影片名稱<span>→</span>
+                    </th>
+                    <th scope="col" class="px-4 py-3 text-sm font-medium">
+                        訂閱數<span>→</span>
+                    </th>
+                    <th scope="col" class="px-4 py-3 text-sm font-medium">
+                        觀看數<span>→</span>
+                    </th>
+                    <th scope="col" class="px-4 py-3 text-sm font-medium">
+                        按讚數<span>→</span>
+                    </th>
+                    <th scope="col" class="px-4 py-3 font-medium">
+                        發佈時間
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/dumGd7lrVOCFfy8t2MwDLH2gVa2raLUQw2e-yIhGb4SE8Ke2QVuf-R5NFtG8MeVh2rqsXVedcg=s88-c-k-c0x00ffffff-no-rj"> 芯羽and白爸_米餅哥
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        音樂娛樂台
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=eRY5Qu44fHc" class="text-blue-700 hover:underline">耶，再七天就回家了，跟著媽祖去旅行day2，到底走完體重會不...</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        32200
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2271
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        298
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-13 17:48:03
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/dumGd7lrVOCFfy8t2MwDLH2gVa2raLUQw2e-yIhGb4SE8Ke2QVuf-R5NFtG8MeVh2rqsXVedcg=s88-c-k-c0x00ffffff-no-rj"> 芯羽and白爸_米餅哥
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        音樂娛樂台
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=C98J3I8cxro" class="text-blue-700 hover:underline">下午兩點媽祖鎮瀾宮出發，我們先遠離網路盲區，跟著媽祖去旅行d...</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        32200
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        4153
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        339
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-13 14:25:44
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/7zd3n5KFfTJf7U_LIdQKslJ93c2LaS45q2CruQGLjsDwqjVEzWXZrJRQodiVKRSp-TltNuQuhQ=s88-c-k-c0x00ffffff-no-rj"> 機台HERO
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        音樂娛樂台
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=d3_USapTqDo" class="text-blue-700 hover:underline">禁歌金曲: 虎式坦克 (Panzerkampfwagen V...</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        23700
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        1551
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        274
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-11 01:02:11
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/cDjNkRqthHQPRPyL6nT7fXOdZ9iLxgsH6uFmEVMRyRu7x0lQgxjCT8-MkJYhWdN9NUNEb2tcwI0=s88-c-k-c0x00ffffff-no-rj"> 放志樂團
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        音樂娛樂台
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=CfeNgPQg4mI" class="text-blue-700 hover:underline">我的直播</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        11900
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        590
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        141
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-03-29 13:20:42
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/7zd3n5KFfTJf7U_LIdQKslJ93c2LaS45q2CruQGLjsDwqjVEzWXZrJRQodiVKRSp-TltNuQuhQ=s88-c-k-c0x00ffffff-no-rj"> 機台HERO
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        音樂娛樂台
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=V-IS1IbqKFA" class="text-blue-700 hover:underline">禁歌金曲: 缺德上核曲 (a messed-up Taiwa...</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        23700
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        57311
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2382
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-03-28 08:30:06
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/GUNGDadq_jH3qNHk7_ZbateHfZ2Nu3XuuGP-pRgsJan_mfmWMyxkfYwyCAd00GgDo00yE88S=s88-c-k-c0x00ffffff-no-rj"> 朱康
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        音樂娛樂台
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=IkQCdQB8qfQ" class="text-blue-700 hover:underline">【 穩 穩 地 走 】搖滾吉他Solo版 (純音樂無人聲)</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        34500
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        1745
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        282
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-03-10 22:46:49
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/7zd3n5KFfTJf7U_LIdQKslJ93c2LaS45q2CruQGLjsDwqjVEzWXZrJRQodiVKRSp-TltNuQuhQ=s88-c-k-c0x00ffffff-no-rj"> 機台HERO
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        音樂娛樂台
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=u6TPpW3PHxs" class="text-blue-700 hover:underline">在民進黨執政後，台灣少子化程度與社會厭童風氣，達到了前所未有...</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        23700
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2580
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        346
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-02-27 22:48:41
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/GUNGDadq_jH3qNHk7_ZbateHfZ2Nu3XuuGP-pRgsJan_mfmWMyxkfYwyCAd00GgDo00yE88S=s88-c-k-c0x00ffffff-no-rj"> 朱康
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        音樂娛樂台
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=9vK4ZMemqM8" class="text-blue-700 hover:underline">朱康 ZhuKang【 哄你 Stay With You 】...</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        34500
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        3756
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        648
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-02-26 22:32:20
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/cDjNkRqthHQPRPyL6nT7fXOdZ9iLxgsH6uFmEVMRyRu7x0lQgxjCT8-MkJYhWdN9NUNEb2tcwI0=s88-c-k-c0x00ffffff-no-rj"> 放志樂團
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        音樂娛樂台
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=GJ_eXK1ySsw" class="text-blue-700 hover:underline">ON AIR  Live House</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        11900
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        0
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        0
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-02-01 21:26:59
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/DkkyhX3O7vnwA34zMtrE-NHPV1eKHpZxeGg1mD6oa0Mk0O8ppHpAWmKiYOtGaXIuPWdHEw4U2_Y=s88-c-k-c0x00ffffff-no-rj"> AI TAIWAN 音樂時事頻道
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        音樂娛樂台
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=5A5RAXBgMTU" class="text-blue-700 hover:underline">[ 吞噬：Swallow ] #shorts  #軍火商 #...</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        21000
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        1258
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        107
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-01-29 18:00:12
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/DkkyhX3O7vnwA34zMtrE-NHPV1eKHpZxeGg1mD6oa0Mk0O8ppHpAWmKiYOtGaXIuPWdHEw4U2_Y=s88-c-k-c0x00ffffff-no-rj"> AI TAIWAN 音樂時事頻道
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        音樂娛樂台
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=sMnMVlo36iI" class="text-blue-700 hover:underline">[ 吞噬 ：Swallow It All ] ｜民進黨的貪婪...</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        21000
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        1187
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        163
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-01-29 00:00:06
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/GUNGDadq_jH3qNHk7_ZbateHfZ2Nu3XuuGP-pRgsJan_mfmWMyxkfYwyCAd00GgDo00yE88S=s88-c-k-c0x00ffffff-no-rj"> 朱康
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        音樂娛樂台
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=lHTADXCYMj4" class="text-blue-700 hover:underline">🔴Live🔴微播！唱唱聊聊。</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        34500
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2792
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        467
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-01-18 23:42:51
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/cDjNkRqthHQPRPyL6nT7fXOdZ9iLxgsH6uFmEVMRyRu7x0lQgxjCT8-MkJYhWdN9NUNEb2tcwI0=s88-c-k-c0x00ffffff-no-rj"> 放志樂團
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        音樂娛樂台
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=R6mMLJQUgZk" class="text-blue-700 hover:underline">好久不見 阿北 #柯文哲</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        11900
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        3291
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        512
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2025-12-28 10:37:08
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/DkkyhX3O7vnwA34zMtrE-NHPV1eKHpZxeGg1mD6oa0Mk0O8ppHpAWmKiYOtGaXIuPWdHEw4U2_Y=s88-c-k-c0x00ffffff-no-rj"> AI TAIWAN 音樂時事頻道
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        音樂娛樂台
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=4dbzHBVFneA" class="text-blue-700 hover:underline">[京華城案 首部曲] part.彭振聲 #京華城案 #sho...</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        21000
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2226
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        399
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2025-12-09 13:31:59
+                    </td>
+                </tr>
+                
+            </tbody>
+        </table>
+        
+        <table id="政治評論台" class="w-full text-left rtl:text-right">
+            <thead class="text-base text-center text-gray-800 uppercase bg-yellow-200">
+                <tr>
+                    <th scope="col" class="px-4 py-3 font-medium">
+                        頻道名稱
+                    </th>
+                    <th scope="col" class="px-4 py-3 text-sm font-medium">
+                        類別
+                    </th>
+                    <th scope="col" class="px-4 py-3 font-medium">
+                        影片名稱<span>→</span>
+                    </th>
+                    <th scope="col" class="px-4 py-3 text-sm font-medium">
+                        訂閱數<span>→</span>
+                    </th>
+                    <th scope="col" class="px-4 py-3 text-sm font-medium">
+                        觀看數<span>→</span>
+                    </th>
+                    <th scope="col" class="px-4 py-3 text-sm font-medium">
+                        按讚數<span>→</span>
+                    </th>
+                    <th scope="col" class="px-4 py-3 font-medium">
+                        發佈時間
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/sgvpiipgp8r5eaSOhko3_2x5Ui1AcbjYcpYlzyQmVe8X8uVqAQOTQXh5bSj4jVXs7XYeGvLH0g=s88-c-k-c0x00ffffff-no-rj"> 洛狗
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        政治評論台
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=0dyJlWFqVKM" class="text-blue-700 hover:underline">洛狗：李貞秀遭開除黨籍 陳清龍槓上了！？</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        46700
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        3144
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        380
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-13 18:14:48
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/r0ZlHQxpBa6NhcGoPnDSMRm7AUSmWYdJmH7S-axOCn-k_LY3J5yvvcCsFl7Iq5jwA6cuIeZE=s88-c-k-c0x00ffffff-no-rj"> 不禮貌鄉民團
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        政治評論台
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=2HK8aB-WYOI" class="text-blue-700 hover:underline">民進黨認了!! 進口印度移工是善意隱瞞 #民進黨 #賴清德 ...</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        254000
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        22434
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        1537
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-13 18:00:00
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/S1y4FwEAZZZGz0KdNP15B9MjNp3wKdW6X7E3gmdVTs7mE6Tdv6xjNlcbc2nZi3gtVio4opmUFw=s88-c-k-c0x00ffffff-no-rj"> Q TV多媒體
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        政治評論台
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=d4Smb9bvzGA" class="text-blue-700 hover:underline">【QTV時論】從鄭習會看兩岸未來！口號治國 vs 拚經濟，台...</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        38200
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        1184
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        121
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-13 17:59:41
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/r0ZlHQxpBa6NhcGoPnDSMRm7AUSmWYdJmH7S-axOCn-k_LY3J5yvvcCsFl7Iq5jwA6cuIeZE=s88-c-k-c0x00ffffff-no-rj"> 不禮貌鄉民團
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        政治評論台
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=KEeq5pZY-xA" class="text-blue-700 hover:underline">民進黨開放印度移工: 印度犯罪率更低 #民進黨 #國民黨 #...</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        254000
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        15869
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2839
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-13 17:00:00
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/r0ZlHQxpBa6NhcGoPnDSMRm7AUSmWYdJmH7S-axOCn-k_LY3J5yvvcCsFl7Iq5jwA6cuIeZE=s88-c-k-c0x00ffffff-no-rj"> 不禮貌鄉民團
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        政治評論台
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=UMJTcZNZUhk" class="text-blue-700 hover:underline">綠能光電害慘魚業，台南魚民痛批民進黨亂搞  #民進黨 #賴清...</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        254000
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        68939
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        4215
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-13 12:19:34
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/Z5e00hlRS4S1BhE-ZhpOmCAEtn-jJht15slZP_S9KugMW_tXsJC7wagcRY6UouzckAzDADZJ=s88-c-k-c0x00ffffff-no-rj"> 超級普通老百姓
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        政治評論台
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=vEdd5a4kvew" class="text-blue-700 hover:underline">這各影片來談一下 印度移工的問題吧? | 印度移工青鳥側翼連...</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        29900
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        1897
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        325
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-13 07:30:00
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/S1y4FwEAZZZGz0KdNP15B9MjNp3wKdW6X7E3gmdVTs7mE6Tdv6xjNlcbc2nZi3gtVio4opmUFw=s88-c-k-c0x00ffffff-no-rj"> Q TV多媒體
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        政治評論台
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=hCxpTLvdluc" class="text-blue-700 hover:underline">【QTV時論】鄭麗文喊和平？網怒炸鍋：那賴清德在忙什麼！和平...</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        38200
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        10707
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        345
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-11 08:31:14
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/sgvpiipgp8r5eaSOhko3_2x5Ui1AcbjYcpYlzyQmVe8X8uVqAQOTQXh5bSj4jVXs7XYeGvLH0g=s88-c-k-c0x00ffffff-no-rj"> 洛狗
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        政治評論台
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=nSddnbUplhQ" class="text-blue-700 hover:underline">洛狗：重頭認識京華城案 你就會知道說柯P貪污有多荒誕</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        46700
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        7980
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        821
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-09 19:59:06
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/S1y4FwEAZZZGz0KdNP15B9MjNp3wKdW6X7E3gmdVTs7mE6Tdv6xjNlcbc2nZi3gtVio4opmUFw=s88-c-k-c0x00ffffff-no-rj"> Q TV多媒體
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        政治評論台
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=CyM6PHesklQ" class="text-blue-700 hover:underline">【QTV時論】這一戰很關鍵！鄭麗文出手，國民黨支持者全動起來...</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        38200
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        7004
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        250
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-09 08:11:04
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/2cFPJUJph7XqIuBmlvPxQa9UOmH0sooo9MEh2pxhtQanxz4zXjARXLIZHlMxTF3-68t3cUi2=s88-c-k-c0x00ffffff-no-rj"> 邏輯思考 x 有一說一
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        政治評論台
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=EqTrTLP--H4" class="text-blue-700 hover:underline">鄭麗文主席拜謁中山陵</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        181000
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        10798
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        1297
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-08 15:27:25
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/Z5e00hlRS4S1BhE-ZhpOmCAEtn-jJht15slZP_S9KugMW_tXsJC7wagcRY6UouzckAzDADZJ=s88-c-k-c0x00ffffff-no-rj"> 超級普通老百姓
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        政治評論台
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=kIFQaAOT_3g" class="text-blue-700 hover:underline">誰叫你反核的 誰叫你返核的? | #青鳥 #陳松勇 #民進黨...</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        29900
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        75591
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        3182
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-04 22:30:21
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/2cFPJUJph7XqIuBmlvPxQa9UOmH0sooo9MEh2pxhtQanxz4zXjARXLIZHlMxTF3-68t3cUi2=s88-c-k-c0x00ffffff-no-rj"> 邏輯思考 x 有一說一
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        政治評論台
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=Mr-87qPy900" class="text-blue-700 hover:underline">那個「言我所言，無所畏懼」的男人？</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        181000
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        93049
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        6095
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-03 23:17:49
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/Z5e00hlRS4S1BhE-ZhpOmCAEtn-jJht15slZP_S9KugMW_tXsJC7wagcRY6UouzckAzDADZJ=s88-c-k-c0x00ffffff-no-rj"> 超級普通老百姓
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        政治評論台
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=HyzBHWJ88Vk" class="text-blue-700 hover:underline">這個影片延伸討論一下政治獻金 在柯文哲一審中被作為"前金" ...</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        29900
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        8815
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        747
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-01 20:45:46
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/sgvpiipgp8r5eaSOhko3_2x5Ui1AcbjYcpYlzyQmVe8X8uVqAQOTQXh5bSj4jVXs7XYeGvLH0g=s88-c-k-c0x00ffffff-no-rj"> 洛狗
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        政治評論台
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=l8uvTx6efjc" class="text-blue-700 hover:underline">4/1：廖老大 我的HERO！/ 李貞秀事件後續</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        46700
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        12292
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        816
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-01 19:42:43
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/2cFPJUJph7XqIuBmlvPxQa9UOmH0sooo9MEh2pxhtQanxz4zXjARXLIZHlMxTF3-68t3cUi2=s88-c-k-c0x00ffffff-no-rj"> 邏輯思考 x 有一說一
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        政治評論台
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=UBww7mVR0J4" class="text-blue-700 hover:underline">南部選民怎麼看民進黨？</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        181000
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        12183
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        1139
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-01 11:50:40
+                    </td>
+                </tr>
+                
+            </tbody>
+        </table>
+        
+        <table id="KOL直播" class="w-full text-left rtl:text-right">
+            <thead class="text-base text-center text-gray-800 uppercase bg-yellow-200">
+                <tr>
+                    <th scope="col" class="px-4 py-3 font-medium">
+                        頻道名稱
+                    </th>
+                    <th scope="col" class="px-4 py-3 text-sm font-medium">
+                        類別
+                    </th>
+                    <th scope="col" class="px-4 py-3 font-medium">
+                        影片名稱<span>→</span>
+                    </th>
+                    <th scope="col" class="px-4 py-3 text-sm font-medium">
+                        訂閱數<span>→</span>
+                    </th>
+                    <th scope="col" class="px-4 py-3 text-sm font-medium">
+                        觀看數<span>→</span>
+                    </th>
+                    <th scope="col" class="px-4 py-3 text-sm font-medium">
+                        按讚數<span>→</span>
+                    </th>
+                    <th scope="col" class="px-4 py-3 font-medium">
+                        發佈時間
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/j_KHzJhqgmNX_2ezNxfq_Kci26TiGLcmsG2CzIQtnZs7RXrCAHYsWJLQ8j0r-W93dTd5sEiW=s88-c-k-c0x00ffffff-no-rj"> DearNaNa
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        KOL直播
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=MeBLNwzK4QI" class="text-blue-700 hover:underline">DearNaNa-即將失傳電影看板技藝國寶級畫師紀雲飛大師現...</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        127000
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        11131
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        1209
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-13 16:53:50
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/mz7aLG2SYH1Wff7_CBdBo9QSXipQMdsCm4-3w-NQhmd2RM2yOn7Vec21iFQCjj9wy33Ty_9mdQ=s88-c-k-c0x00ffffff-no-rj"> 2Chill
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        KOL直播
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=gejXdZO-9Ro" class="text-blue-700 hover:underline">@2Chill直播 半夜偷開</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        33500
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        3536
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        326
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-13 02:05:01
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/j_KHzJhqgmNX_2ezNxfq_Kci26TiGLcmsG2CzIQtnZs7RXrCAHYsWJLQ8j0r-W93dTd5sEiW=s88-c-k-c0x00ffffff-no-rj"> DearNaNa
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        KOL直播
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=nJ3qTWvfHp8" class="text-blue-700 hover:underline">DearNaNa-印度勞工是誰引進的？時尚正在城市蔓延．中國...</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        127000
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        10464
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        1082
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-13 00:56:40
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/j_KHzJhqgmNX_2ezNxfq_Kci26TiGLcmsG2CzIQtnZs7RXrCAHYsWJLQ8j0r-W93dTd5sEiW=s88-c-k-c0x00ffffff-no-rj"> DearNaNa
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        KOL直播
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=EMpGuYVRfk4" class="text-blue-700 hover:underline">DearNaNa-掃街天王邱臣遠 v.s. 民國詩聖許甫一起...</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        127000
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        10794
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        1222
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-12 11:39:23
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/mz7aLG2SYH1Wff7_CBdBo9QSXipQMdsCm4-3w-NQhmd2RM2yOn7Vec21iFQCjj9wy33Ty_9mdQ=s88-c-k-c0x00ffffff-no-rj"> 2Chill
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        KOL直播
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=tHcko5ErFLc" class="text-blue-700 hover:underline">@2Chill直播Live's 就一個字</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        33500
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        4920
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        447
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-11 00:52:59
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/yyciHWTbiQvBsk-SF1qQSYtodfHDZgG-MtyvSIRu5JXNJUUqlMkVEJKm5xG5-567_SD7xZFg=s88-c-k-c0x00ffffff-no-rj"> 陳清茂
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        KOL直播
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=pNPHVcM91Mc" class="text-blue-700 hover:underline">2026/4/10/鄭習會，民進黨樂瘋了！又來了，抗中保台！...</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        167000
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        16771
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        1812
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-10 22:23:55
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/WrJZq3c4Q8xW2IWLwRTk4UsKIz27ExWQ4zTyw21oQhrGU268e_UyDEuq2IB78SF2-Uv-8hqxab4=s88-c-k-c0x00ffffff-no-rj"> 我家阿北啦TV
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        KOL直播
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=s8W39mfvE24" class="text-blue-700 hover:underline">【直播】 嘉義市
+帥哥冰品店開幕</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        45500
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        694
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        164
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-09 00:01:42
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/WrJZq3c4Q8xW2IWLwRTk4UsKIz27ExWQ4zTyw21oQhrGU268e_UyDEuq2IB78SF2-Uv-8hqxab4=s88-c-k-c0x00ffffff-no-rj"> 我家阿北啦TV
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        KOL直播
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=fKcoHWaqNeE" class="text-blue-700 hover:underline">【直播】 2嘉義市
+帥哥冰品店開幕</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        45500
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        1526
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        305
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-08 13:42:13
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/WrJZq3c4Q8xW2IWLwRTk4UsKIz27ExWQ4zTyw21oQhrGU268e_UyDEuq2IB78SF2-Uv-8hqxab4=s88-c-k-c0x00ffffff-no-rj"> 我家阿北啦TV
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        KOL直播
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=w2be_RlwoXo" class="text-blue-700 hover:underline">柯文哲張啓楷唱堅持 嘉義文化夜市掃街20260403</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        45500
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        1390
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        391
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-05 21:53:17
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/mz7aLG2SYH1Wff7_CBdBo9QSXipQMdsCm4-3w-NQhmd2RM2yOn7Vec21iFQCjj9wy33Ty_9mdQ=s88-c-k-c0x00ffffff-no-rj"> 2Chill
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        KOL直播
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=Q-sCh3O4qBw" class="text-blue-700 hover:underline">@2Chill直播Live's HERO? 哈嘍?</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        33500
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        6735
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        584
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-03 00:35:41
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/yyciHWTbiQvBsk-SF1qQSYtodfHDZgG-MtyvSIRu5JXNJUUqlMkVEJKm5xG5-567_SD7xZFg=s88-c-k-c0x00ffffff-no-rj"> 陳清茂
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        KOL直播
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=_dHOoVKvYA0" class="text-blue-700 hover:underline">不設議題...上線聊聊!!</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        167000
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        14972
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        1749
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-01 22:56:35
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/yyciHWTbiQvBsk-SF1qQSYtodfHDZgG-MtyvSIRu5JXNJUUqlMkVEJKm5xG5-567_SD7xZFg=s88-c-k-c0x00ffffff-no-rj"> 陳清茂
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        KOL直播
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=IXRp146wWJ8" class="text-blue-700 hover:underline">賴清德你太可惡了，為了要批評國民黨，竟然拿台灣被日本殖民來說...</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        167000
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        14030
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        1756
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-03-16 22:18:53
+                    </td>
+                </tr>
+                
+            </tbody>
+        </table>
+        
+        <table id="民眾黨公職" class="w-full text-left rtl:text-right">
+            <thead class="text-base text-center text-gray-800 uppercase bg-yellow-200">
+                <tr>
+                    <th scope="col" class="px-4 py-3 font-medium">
+                        頻道名稱
+                    </th>
+                    <th scope="col" class="px-4 py-3 text-sm font-medium">
+                        類別
+                    </th>
+                    <th scope="col" class="px-4 py-3 font-medium">
+                        影片名稱<span>→</span>
+                    </th>
+                    <th scope="col" class="px-4 py-3 text-sm font-medium">
+                        訂閱數<span>→</span>
+                    </th>
+                    <th scope="col" class="px-4 py-3 text-sm font-medium">
+                        觀看數<span>→</span>
+                    </th>
+                    <th scope="col" class="px-4 py-3 text-sm font-medium">
+                        按讚數<span>→</span>
+                    </th>
+                    <th scope="col" class="px-4 py-3 font-medium">
+                        發佈時間
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/QTkyd0jNVsyn-K--P4bUz5Tm21qrIaPDBTK0_mvEjBBTiMpCBWC6uHTYrAhspdot9PlZbHKQ=s88-c-k-c0x00ffffff-no-rj"> 立法委員 陳昭姿
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        民眾黨公職
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=tK1xfuFVWRA" class="text-blue-700 hover:underline">【開箱姿料夾EP91】黃國昌準備好了!新北更有型，我們一起贏...</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        15100
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        810
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        268
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-13 18:55:13
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/DCOHZCSJ4dg_q3014YojHhcyHDcd4C6mJqDM00gf2LVM9bEBEQgih1ZQpKUyHKOLO-nXDnIAWA=s88-c-k-c0x00ffffff-no-rj"> 黃瀞瑩  台北有姐
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        民眾黨公職
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=D-t6myqGw7E" class="text-blue-700 hover:underline">願景很AI 體感很悲哀!北士科交通評估竟要民眾再等半年! #...</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        63500
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        728
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        42
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-13 17:58:07
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/NgTQewpzC3d9cezlYnn-T-oeGeAsTvLivqSZSB_-Lul_dSv5EKrxCa2UyQgf19_Y-Y8U2eddB7w=s88-c-k-c0x00ffffff-no-rj"> 邱臣遠
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        民眾黨公職
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=Pze-MOlnaTk" class="text-blue-700 hover:underline">原來是松山囡仔! 邱臣遠來囉草埔市場拜票 "送幸福"合體! ...</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        20100
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2999
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        640
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-13 01:49:52
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/Jy11du1xCkbYEEqUFeLCusj1inz5EC9KUR9ZxqEtcSzqlVkh622AIrp8aagnR8xPIBYMkQ7l=s88-c-k-c0x00ffffff-no-rj"> 立法委員 張啓楷
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        民眾黨公職
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=u7_tCBqaIYs" class="text-blue-700 hover:underline">白沙屯媽祖進香，祈願風調雨順、家家平安、媽祖庇佑大家事事順心</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        39300
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        3055
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        174
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-13 01:44:19
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/plfydDRPr5uvLGs7sBmzhp7nkhKbzu6No87w3OVI_7wMvAxYJ4Dy6Jro9BE87GV4iBnur_lYQg=s88-c-k-c0x00ffffff-no-rj"> 林昭印
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        民眾黨公職
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=3yAR_59xA2k" class="text-blue-700 hover:underline">🔥超硬直播｜柯文哲判決書重點歸納｜印度移工 寵物用藥 民進黨...</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        13800
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2580
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        510
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-12 20:42:23
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/_zTWEWRVj1AqkqQdtYKhqPN8EwoyVmaqvZYk2DEyrT8VyKczKItMi3PURYeW885N6f6ATr4N2fE=s88-c-k-c0x00ffffff-no-rj"> 陳世軒 jimmy
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        民眾黨公職
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=zg13IAOQnDE" class="text-blue-700 hover:underline">城市新莊先！拆大漢橋分隔島.推動中小學外籍教師等改革 陳世軒...</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        42500
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        795
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        223
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-11 18:59:56
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/plfydDRPr5uvLGs7sBmzhp7nkhKbzu6No87w3OVI_7wMvAxYJ4Dy6Jro9BE87GV4iBnur_lYQg=s88-c-k-c0x00ffffff-no-rj"> 林昭印
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        民眾黨公職
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=lePNekZIfCg" class="text-blue-700 hover:underline">我的大蚊子寶寶 #國際寵物日快樂</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        13800
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        270
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        117
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-11 12:04:28
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/iv9Sco0Why0I95fH0gzLSFIw2iV54Xg8VBMTpn6v7iRU1TRWaJH7-WcHOqEDeUG5qHOCrMvh=s88-c-k-c0x00ffffff-no-rj"> 台北市議員 陳宥丞
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        民眾黨公職
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=s5jo6ivePr0" class="text-blue-700 hover:underline">中央新政沒配套！毛小孩面臨沒藥醫危機￼</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        20500
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        3695
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        108
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-10 22:41:20
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/iv9Sco0Why0I95fH0gzLSFIw2iV54Xg8VBMTpn6v7iRU1TRWaJH7-WcHOqEDeUG5qHOCrMvh=s88-c-k-c0x00ffffff-no-rj"> 台北市議員 陳宥丞
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        民眾黨公職
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=Sjubmm_mni8" class="text-blue-700 hover:underline">蔣萬安穩贏是警訊🚨市政要拼出成績📕</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        20500
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        1419
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        60
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-10 08:35:59
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/NgTQewpzC3d9cezlYnn-T-oeGeAsTvLivqSZSB_-Lul_dSv5EKrxCa2UyQgf19_Y-Y8U2eddB7w=s88-c-k-c0x00ffffff-no-rj"> 邱臣遠
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        民眾黨公職
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=oCHFb18AsyI" class="text-blue-700 hover:underline">#玫好新竹 #李玫 來了｜臣心報報快閃直播😎 #邱臣遠 #幸...</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        20100
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2555
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        518
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-09 23:45:42
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/kInKpwo5Ei1C6QnkCdf4QjchqtcJw8fKnu-HorYHH2P97v-o3dmqgBjSdYwHCJJ2Vkx78QLwMw=s88-c-k-c0x00ffffff-no-rj"> 吳怡萱
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        民眾黨公職
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=WTEQ5TbJzSQ" class="text-blue-700 hover:underline">【眾點萱言】ep7.民進黨性平死當！性平部主任李晏榕出來道歉...</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        24300
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        7350
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        1336
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-09 23:39:27
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/plfydDRPr5uvLGs7sBmzhp7nkhKbzu6No87w3OVI_7wMvAxYJ4Dy6Jro9BE87GV4iBnur_lYQg=s88-c-k-c0x00ffffff-no-rj"> 林昭印
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        民眾黨公職
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=XKNucy40Yhc" class="text-blue-700 hover:underline">🔥超硬直播｜要沒收選舉了？｜民進黨新的抹黑攻擊來襲✈️</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        13800
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2233
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        476
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-09 20:38:13
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/NgTQewpzC3d9cezlYnn-T-oeGeAsTvLivqSZSB_-Lul_dSv5EKrxCa2UyQgf19_Y-Y8U2eddB7w=s88-c-k-c0x00ffffff-no-rj"> 邱臣遠
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        民眾黨公職
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=8Qw1zk0Q0hM" class="text-blue-700 hover:underline">《農林漁牧業普查地方幹部人員研討會 》 #幸福真永遠 #邱臣...</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        20100
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        559
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        44
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-09 10:02:37
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/_zTWEWRVj1AqkqQdtYKhqPN8EwoyVmaqvZYk2DEyrT8VyKczKItMi3PURYeW885N6f6ATr4N2fE=s88-c-k-c0x00ffffff-no-rj"> 陳世軒 jimmy
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        民眾黨公職
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=ak5MaSMY6Rg" class="text-blue-700 hover:underline">#質詢精華 新北春節變「美伊戰場」？違法放煙火上千檢舉僅罰1...</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        42500
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        38554
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        1408
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-08 19:00:41
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/Jy11du1xCkbYEEqUFeLCusj1inz5EC9KUR9ZxqEtcSzqlVkh622AIrp8aagnR8xPIBYMkQ7l=s88-c-k-c0x00ffffff-no-rj"> 立法委員 張啓楷
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        民眾黨公職
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=y2Vz-VIYhHw" class="text-blue-700 hover:underline">7k直播 -初選民調謝票</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        39300
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        5734
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        1216
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-08 12:11:35
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/iv9Sco0Why0I95fH0gzLSFIw2iV54Xg8VBMTpn6v7iRU1TRWaJH7-WcHOqEDeUG5qHOCrMvh=s88-c-k-c0x00ffffff-no-rj"> 台北市議員 陳宥丞
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        民眾黨公職
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=eOXx6o6e3x0" class="text-blue-700 hover:underline">直播 服務 （無聲🔇 ）保護個人資料</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        20500
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        595
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        110
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-08 08:21:13
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/-27u0iIwcherLqgku1L075YcYT-NWiC2mqNXs3VYcGcsTQDqttWlp_V-w33xxWopqN4uwkVD=s88-c-k-c0x00ffffff-no-rj"> 張雪如 要你幸福
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        民眾黨公職
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=Jm0oB29C-Kc" class="text-blue-700 hover:underline">泰籍移工腦溢血，善心助返鄉圓夢</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        10000
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        212
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        72
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-08 08:02:20
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/Jy11du1xCkbYEEqUFeLCusj1inz5EC9KUR9ZxqEtcSzqlVkh622AIrp8aagnR8xPIBYMkQ7l=s88-c-k-c0x00ffffff-no-rj"> 立法委員 張啓楷
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        民眾黨公職
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=umyESs3J_JE" class="text-blue-700 hover:underline">最後一天，挺阿楷顧電話，民調電話唯一支持張啓楷</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        39300
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2458
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        269
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-04 13:33:13
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/kInKpwo5Ei1C6QnkCdf4QjchqtcJw8fKnu-HorYHH2P97v-o3dmqgBjSdYwHCJJ2Vkx78QLwMw=s88-c-k-c0x00ffffff-no-rj"> 吳怡萱
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        民眾黨公職
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=cPpGhL3L55M" class="text-blue-700 hover:underline">兒童節快樂！</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        24300
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        5674
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        935
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-04 10:48:01
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/-27u0iIwcherLqgku1L075YcYT-NWiC2mqNXs3VYcGcsTQDqttWlp_V-w33xxWopqN4uwkVD=s88-c-k-c0x00ffffff-no-rj"> 張雪如 要你幸福
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        民眾黨公職
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=dAQTIQAwtSM" class="text-blue-700 hover:underline">2026年4月3日</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        10000
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        1204
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        84
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-03 18:14:04
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/kInKpwo5Ei1C6QnkCdf4QjchqtcJw8fKnu-HorYHH2P97v-o3dmqgBjSdYwHCJJ2Vkx78QLwMw=s88-c-k-c0x00ffffff-no-rj"> 吳怡萱
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        民眾黨公職
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=QJR0DDyMIcU" class="text-blue-700 hover:underline">有快樂的爸媽才有快樂的小孩，我們對育兒支持已經在路上，未來只...</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        24300
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        8351
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        1109
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-03 12:27:06
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/DCOHZCSJ4dg_q3014YojHhcyHDcd4C6mJqDM00gf2LVM9bEBEQgih1ZQpKUyHKOLO-nXDnIAWA=s88-c-k-c0x00ffffff-no-rj"> 黃瀞瑩  台北有姐
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        民眾黨公職
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=HZ8PaaMwOTg" class="text-blue-700 hover:underline">為心衛社工爭取權益！0402感謝社工師在第一線的付出！#sh...</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        63500
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        5488
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        161
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-02 22:22:47
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/DCOHZCSJ4dg_q3014YojHhcyHDcd4C6mJqDM00gf2LVM9bEBEQgih1ZQpKUyHKOLO-nXDnIAWA=s88-c-k-c0x00ffffff-no-rj"> 黃瀞瑩  台北有姐
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        民眾黨公職
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=S2Akjsd5oLk" class="text-blue-700 hover:underline">【學姐當媽加班中】EP.4 團結</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        63500
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        4830
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        868
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-01 21:31:52
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/QTkyd0jNVsyn-K--P4bUz5Tm21qrIaPDBTK0_mvEjBBTiMpCBWC6uHTYrAhspdot9PlZbHKQ=s88-c-k-c0x00ffffff-no-rj"> 立法委員 陳昭姿
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        民眾黨公職
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=WmgBh5Dw0t4" class="text-blue-700 hover:underline">在遺憾中凝聚變革的勇氣：完善少事法『矯正教育、假釋追蹤與塗銷...</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        15100
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2038
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        457
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-04-01 17:14:01
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/QTkyd0jNVsyn-K--P4bUz5Tm21qrIaPDBTK0_mvEjBBTiMpCBWC6uHTYrAhspdot9PlZbHKQ=s88-c-k-c0x00ffffff-no-rj"> 立法委員 陳昭姿
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        民眾黨公職
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=ApPeJosRSVo" class="text-blue-700 hover:underline">【開箱姿料夾EP90】我們絕不屈服!!</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        15100
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        4634
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        1031
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-03-30 21:01:40
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/-27u0iIwcherLqgku1L075YcYT-NWiC2mqNXs3VYcGcsTQDqttWlp_V-w33xxWopqN4uwkVD=s88-c-k-c0x00ffffff-no-rj"> 張雪如 要你幸福
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        民眾黨公職
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=Lz_C8yQPo98" class="text-blue-700 hover:underline">廈門—台灣 引鄉人首航</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        10000
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        3818
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        60
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-03-22 03:09:45
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/_cWbyaJxp8rwjJ4uMxwxD8hNAi3QrC_PMZuhb_6LgkXOewIqwhkmXRnnqKLhW3xNtcG1CJlh=s88-c-k-c0x00ffffff-no-rj"> 林珍羽 零距離
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        民眾黨公職
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=-JTdQZfbYBg" class="text-blue-700 hover:underline">土地公供品拜什麼？內行人都買這間大稻埕百年餅店！#short...</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        7260
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        8341
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        279
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-03-18 12:00:01
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/_cWbyaJxp8rwjJ4uMxwxD8hNAi3QrC_PMZuhb_6LgkXOewIqwhkmXRnnqKLhW3xNtcG1CJlh=s88-c-k-c0x00ffffff-no-rj"> 林珍羽 零距離
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        民眾黨公職
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=_IdOJ0k57wg" class="text-blue-700 hover:underline">原來湯圓可以這樣玩？元宵節小朋友指定湯圓！珍羽使命必達！#s...</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        7260
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        1292
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        51
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-03-12 20:01:09
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/_cWbyaJxp8rwjJ4uMxwxD8hNAi3QrC_PMZuhb_6LgkXOewIqwhkmXRnnqKLhW3xNtcG1CJlh=s88-c-k-c0x00ffffff-no-rj"> 林珍羽 零距離
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        民眾黨公職
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=Td5IUbASE0Y" class="text-blue-700 hover:underline">台北中山區最強聚寶盆？股票上漲📈大老闆都來拜的廟！#shor...</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        7260
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        1455
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        127
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-03-11 20:00:55
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/WRBmuDcYScobmGXitSF1mw4Oe-kgNt4aLxEvObeAE3QDRO0JztXbt3x40fnBCvcz5pqFo0EizA=s88-c-k-c0x00ffffff-no-rj"> 麥玉珍
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        民眾黨公職
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=1e-ByMuPWXc" class="text-blue-700 hover:underline">Oh麥! 珍新小食堂－羅望子果汁</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2990
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        277
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        89
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-02-07 14:00:03
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/WRBmuDcYScobmGXitSF1mw4Oe-kgNt4aLxEvObeAE3QDRO0JztXbt3x40fnBCvcz5pqFo0EizA=s88-c-k-c0x00ffffff-no-rj"> 麥玉珍
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        民眾黨公職
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=7gMQmxZCUzs" class="text-blue-700 hover:underline">【普通立委麥玉珍 : 一段不一樣的國會旅程 寫下台灣多元的答...</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2990
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        6600
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        912
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-02-01 14:00:13
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/WRBmuDcYScobmGXitSF1mw4Oe-kgNt4aLxEvObeAE3QDRO0JztXbt3x40fnBCvcz5pqFo0EizA=s88-c-k-c0x00ffffff-no-rj"> 麥玉珍
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        民眾黨公職
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=N1saegLOFAA" class="text-blue-700 hover:underline">【Oh麥!珍新小食堂】一碗魚湯的深度：在酸甜鮮美中，看見台灣...</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2990
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        202
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        40
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2026-01-31 14:00:30
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/Hz9oj212l1yXovYfZWMFvhC2fTvAKudY3qiSIL6Qtr1jSOfbtLywVwgJ4vycPFptihrSjXCc5Q=s88-c-k-c0x00ffffff-no-rj"> 江和樹
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        民眾黨公職
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=3UU61XF5DLc" class="text-blue-700 hover:underline">薄薄ㄟ家庭霧峰在地銅板美食古早味店名：度小月擔仔麵</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        3950
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        1483
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        13
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2025-11-12 10:40:29
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/9al2-2IxqjPco1MZDGv_zCtGTCQiJtrAR7-Xux3gQ_oPapqgFD_RUyrhw9-IvBMHM6fg1PfC=s88-c-k-c0x00ffffff-no-rj"> 李有宜
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        民眾黨公職
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=rwVsDBwLJUA" class="text-blue-700 hover:underline">【有宜TV】台北市議員 #侯漢廷 來有宜直播室囉~</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        7550
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2855
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        557
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2025-09-30 22:06:46
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/9al2-2IxqjPco1MZDGv_zCtGTCQiJtrAR7-Xux3gQ_oPapqgFD_RUyrhw9-IvBMHM6fg1PfC=s88-c-k-c0x00ffffff-no-rj"> 李有宜
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        民眾黨公職
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=VminuDe88CY" class="text-blue-700 hover:underline">【有宜TV】有宜直播重出江湖，分享三蘆在地大小事</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        7550
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2052
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        592
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2025-09-17 09:42:32
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/9al2-2IxqjPco1MZDGv_zCtGTCQiJtrAR7-Xux3gQ_oPapqgFD_RUyrhw9-IvBMHM6fg1PfC=s88-c-k-c0x00ffffff-no-rj"> 李有宜
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        民眾黨公職
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=f_yXyL_A__Q" class="text-blue-700 hover:underline">北院現場，迎接阿北出來！一年了🥹</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        7550
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        1172
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        388
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2025-09-09 03:45:52
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/Hz9oj212l1yXovYfZWMFvhC2fTvAKudY3qiSIL6Qtr1jSOfbtLywVwgJ4vycPFptihrSjXCc5Q=s88-c-k-c0x00ffffff-no-rj"> 江和樹
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        民眾黨公職
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=H_iV3Fdw4D0" class="text-blue-700 hover:underline">台中823反霸免 藍白團結一定贏</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        3950
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        1487
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        80
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2025-08-18 15:39:56
+                    </td>
+                </tr>
+                
+                <tr class="bg-white border-b hover:bg-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900">
+                        <img width="50%" src="https://yt3.ggpht.com/Hz9oj212l1yXovYfZWMFvhC2fTvAKudY3qiSIL6Qtr1jSOfbtLywVwgJ4vycPFptihrSjXCc5Q=s88-c-k-c0x00ffffff-no-rj"> 江和樹
+                    </th>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        民眾黨公職
+                    </td>
+                    <td class="px-6 py-4 font-medium text-gray-900">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=h_WlTjwCN0o" class="text-blue-700 hover:underline">大里人潑水節邀請 抖音網紅【 DJ小慌】 魏宏＆天曜 嗨翻全...</a>
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        3950
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        5005
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        50
+                    </td>
+                    <td class="px-6 py-4 text-center font-medium text-gray-900">
+                        2025-07-07 16:28:45
+                    </td>
+                </tr>
+                
+            </tbody>
+        </table>
+        
+    </div>
+    
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("topBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+
+</html>
